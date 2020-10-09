@@ -272,6 +272,16 @@ img {
 .room__button {
   text-align: center;
   padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 3rem 3rem 8rem; */
+  max-width: 40%;
+  margin: 0 auto;
+}
+.room__button .btn:first-child {
+  padding: 1rem 4.2rem;
 }
 
 .intro__title {
@@ -302,13 +312,9 @@ img {
   border: none;
   font-weight: 600;
   border-radius: 1rem;
-  margin-right: 10rem;
   color: #fff;
   background: #016392;
   transition: 0.25s linear;
-}
-.btn:first-child {
-  padding: 1rem 4.5rem;
 }
 .btn:hover {
   background: #0982b9;
@@ -437,9 +443,12 @@ img {
 }
 .book__button {
   text-align: center;
-}
-.book__button button:last-child {
-  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 3rem 3rem 8rem; */
+  max-width: 40%;
+  margin: 0 auto;
 }
 
 .job__background {
@@ -509,9 +518,21 @@ img {
 }
 .job__button {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 3rem 3rem 8rem;
+  max-width: 80%;
+  padding: 6rem 0;
+}
+.job__button-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.job__button-btn .btn:last-child {
+  padding: 1rem 3.8rem;
 }
 .job__button-create {
   background: #ccc;
@@ -603,8 +624,8 @@ img {
   padding-left: 1rem;
 }
 
-.job__button .btn:last-child {
-  padding: 1rem 5rem;
+.job__button {
+  margin: 0 auto;
 }
 
 .footer {

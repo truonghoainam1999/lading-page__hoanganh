@@ -290,6 +290,16 @@ img {
     &__button {
         text-align: center;
         padding:3rem 0 ;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 3rem 3rem 8rem; */
+        max-width: 40%;
+        margin: 0 auto;
+        .btn:first-child{
+            padding: 1rem 4.2rem;
+        }
     }
 }
 .intro {
@@ -321,18 +331,19 @@ img {
     border: none;
     font-weight: 600;
     border-radius: 1rem;
-    margin-right: 10rem;
+    // margin-right: 10rem;
     color: #fff;
     background:$background-color;
     transition:0.25s linear;
-    &:first-child{
-        padding:1rem 4.5rem;
-    }
+    // &:first-child{
+    //     padding:1rem 4.5rem;
+    // }
     &:hover{
         background :#0982b9;
     }
 }
 .book {
+
     padding-bottom: 5rem;
     background: white;
     border-bottom: 1px solid #cccc;
@@ -457,9 +468,15 @@ img {
     }
     &__button {
         text-align: center;
-        button:last-child {
-            padding : 1rem 3rem ;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 3rem 3rem 8rem; */
+        max-width: 40%;
+        margin: 0 auto;
+        // button:last-child {
+        //     padding : 1rem 3rem ;
+        // }
     }
 }
 .job {
@@ -530,10 +547,23 @@ img {
         border-bottom: 1px solid #cccc;
     }
     &__button {
+        &-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 50%;
+            margin: 0 auto;
+            padding:5rem 0;
+            .btn:last-child {
+                padding: 1rem 3.8rem;
+            }
+        }
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        padding: 3rem 3rem 8rem;
+        max-width: 80%;
+        padding :6rem 0;
+        // padding: 3rem 3rem 8rem;
         &-create {
             background: #ccc;
             padding: 2rem;
@@ -633,9 +663,11 @@ img {
 }
 
 .job__button {
-    .btn:last-child {
-        padding:1rem 5rem;
-    }
+    // max-width: 50%;
+    margin: 0 auto;
+    // .btn:last-child {
+    //     padding:1rem 5rem;
+    // }
 }
 .footer {
     background :$primary-color;
